@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <audio src="./assets/sounds/Colours.mp3"></audio>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <div class="player-time">
+          <div class="current">0:00</div>
+          <div class="divider">|</div>
+          <div class="duration"></div>
+        </div>
+        <div class="volume-container">
+          <div class="volume-button" draggable="false">
+            <div class="volume icono-volumeMedium" draggable="false"></div>
+          </div>
+
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+
+        <div class="song-name">Grouplove - colours</div>
+        <div class="progress">
+          <div class="progress-filled"></div>
+        </div>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="options-button">
+      <div class="option-icon icono-gear"></div>
+    </div>
+    <div class="options-panel">
+      <div class="options-option">
+        <span class="caption">Language</span>
+        <select class="language" name="langueage" id="langueage">
+          <option value="en">En</option>
+          <option value="ru">Ru</option>
+        </select>
+      </div>
+      <div class="options-option">
+        <span class="caption">Image Source</span>
+        <select class="image-api" name="image-api" id="image-api">
+          <option value="git">GitHub</option>
+          <option value="unsplash">Unsplash</option>
+          <option value="flickr">Flickr</option>
+        </select>
+      </div>
+      <div class="options-option option-tags">
+        <span class="caption">Image tags</span>
+        <span class="caption">(english only separated by coma)</span>
+        <input class="tags" type="text" name="tags" id="tags" placeholder="nature, morning, sunny">
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
